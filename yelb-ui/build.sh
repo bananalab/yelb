@@ -19,8 +19,9 @@ rm -r src/app/about
 
 cd src
 
-npm install  
+npm install
 
+ng config -g cli.warnings.versionMismatch false
 ng build --environment=prod --output-path=./prod/dist/ -aot -vc -cc -dop --buildOptimizer
 ng build --environment=test --output-path=./test/dist/
 ng build --environment=dev --output-path=./dev/dist/
