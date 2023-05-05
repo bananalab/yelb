@@ -40,11 +40,10 @@ phases:
        - env
        - cd yelb-ui
        - bash -uex build.sh
-      # - command
   #post_build:
     #commands:
-      # - command
-      # - command
+       # - command
+       # - command
 #reports:
   #report-name-or-arn:
     #files:
@@ -55,10 +54,10 @@ phases:
     #file-format: JunitXml | CucumberJson
 artifacts:
   files:
-     - 'yelb-ui/clarity-seed/src/prod/*'
+     - 'yelb-ui/clarity-seed/src/prod/**/*'
     # - location
   #name: $(date +%Y-%m-%d)
-  #discard-paths: yes
+  discard-paths: yes
   #base-directory: location
 #cache:
   #paths:
