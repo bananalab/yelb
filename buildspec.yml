@@ -54,7 +54,7 @@ phases:
     #file-format: JunitXml | CucumberJson
 artifacts:
   files:
-     - 'yelb-ui/clarity-seed/src/prod/**/*'
+     - '**/*'
     # - location
   #name: $(date +%Y-%m-%d)
   discard-paths: yes
