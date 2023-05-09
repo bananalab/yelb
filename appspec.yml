@@ -1,3 +1,4 @@
+# ref: https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file-structure-hooks.html#appspec-hooks-server
 version: 0.0
 os: linux
 files:
@@ -6,6 +7,6 @@ files:
 hooks:
   BeforeInstall:
   AfterInstall:
-    - location: deployments/platformdeployment/Linux/single-instance-deployment.sh
-      timeout: 300
-      runas: root
+    #- location: deployments/platformdeployment/Linux/single-instance-deployment.sh
+    #  timeout: 3600
+    #  runas: root
