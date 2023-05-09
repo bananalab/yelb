@@ -1,0 +1,11 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /tmp
+hooks:
+  BeforeInstall:
+  AfterInstall:
+    - location: deployments/platformdeployment/Linux/single-instance-deployment.sh
+      timeout: 300
+      runas: root

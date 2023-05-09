@@ -57,7 +57,7 @@ artifacts:
      - '**/*'
     # - location
   #name: $(date +%Y-%m-%d)
-  discard-paths: yes
+  #discard-paths: yes
   #base-directory: location
 #cache:
   #paths:
