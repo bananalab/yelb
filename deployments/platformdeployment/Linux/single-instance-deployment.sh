@@ -5,9 +5,9 @@
 
 #!/bin/bash
 cd deployments/platformdeployment/Linux
-redis-server.sh
-yelb-db.sh
-yelb-appserver.sh
+./redis-server.sh
+./yelb-db.sh
+./yelb-appserver.sh
 #curl https://raw.githubusercontent.com/mreferre/yelb/master/deployments/platformdeployment/Linux/redis-server.sh | bash 
 #curl https://raw.githubusercontent.com/mreferre/yelb/master/deployments/platformdeployment/Linux/yelb-db.sh | bash
 #curl https://raw.githubusercontent.com/mreferre/yelb/master/deployments/platformdeployment/Linux/yelb-appserver.sh | bash
