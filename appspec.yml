@@ -3,9 +3,12 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /tmp
+    destination: /tmp/yelb
 hooks:
   BeforeInstall:
+    - location: deployments/platformdeployment/Linux/cleanup.sh
+      timeout: 30
+      runas: root
   AfterInstall:
     #- location: deployments/platformdeployment/Linux/single-instance-deployment.sh
     #  timeout: 3600
