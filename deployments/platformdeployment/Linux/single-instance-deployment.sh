@@ -4,6 +4,7 @@
 # However these scripts have a default to "localhost" should no variable be set, so they by default works on a single instance deployment.
 
 #!/bin/bash -uex
+export SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 cd deployments/platformdeployment/Linux
 ./redis-server.sh
 ./yelb-db.sh

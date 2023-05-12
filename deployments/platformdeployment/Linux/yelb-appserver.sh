@@ -30,6 +30,6 @@ rm -rf /home/yelb/yelb-appserver
 cp -r yelb-appserver /home/yelb
 chown -R yelb:yelb /home/yelb
 
-cp "${BASH_SOURCE[0]}/yelb-appserver.service" /lib/systemd/system/yelb-appserver.service
+cp "${SCRIPT_DIR}/yelb-appserver.service" /lib/systemd/system/yelb-appserver.service
 systemctl enable yelb-appserver
 systemctl start yelb-appserver
