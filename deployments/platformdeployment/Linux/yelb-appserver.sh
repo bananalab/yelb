@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -uex
 
 # Massimo Re Ferre' massimo@it20.info
 

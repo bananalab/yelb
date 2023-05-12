@@ -3,7 +3,7 @@
 # Note some of these scripts require you to input the proper endpoints. 
 # However these scripts have a default to "localhost" should no variable be set, so they by default works on a single instance deployment.
 
-#!/bin/bash
+#!/bin/bash -uex
 cd deployments/platformdeployment/Linux
 ./redis-server.sh
 ./yelb-db.sh
