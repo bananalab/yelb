@@ -1,7 +1,7 @@
 #!/bin/bash -uex
 
 # Massimo Re Ferre' massimo@it20.info
-
+export SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 ###########################################################
 ###########              USER INPUTS            ###########
 ###########################################################
