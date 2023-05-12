@@ -1,0 +1,18 @@
+[Unit]
+Description=yelb-appserver
+Requires=network.target
+Requires=postgresql.service
+Requires=redis.service
+
+[Service]
+Type=simple
+User=yelb
+Group=yelb
+WorkingDirectory=/home/yelb/yelb-appserver
+ExecStart=/bin/ruby yelb-appserver.rb -o 0.0.0.0
+TimeoutSec=30
+RestartSec=15s
+Restart=always
+ 
+[Install]
+WantedBy=multi-user.target

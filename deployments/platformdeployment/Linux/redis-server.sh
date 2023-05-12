@@ -8,11 +8,11 @@
 export HOMEDIR="/yelb-setup"
 yum update -y 
 yum install -y git
-if [ ! -d $HOMEDIR ]; then
-    mkdir $HOMEDIR
-    cd $HOMEDIR
-    git clone http://github.com/mreferre/yelb
-fi 
+#if [ ! -d $HOMEDIR ]; then
+#    mkdir $HOMEDIR
+#    cd $HOMEDIR
+#    git clone http://github.com/mreferre/yelb
+#fi 
 ###########################################################
 
 amazon-linux-extras install epel -y
