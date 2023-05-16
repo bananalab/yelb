@@ -27,7 +27,7 @@ if [ ! -d /home/yelb ]; then
     useradd yelb
 fi
 rm -rf /home/yelb/yelb-appserver
-cp -r "${SCRIPT_DIR}/../yelb-appserver" /home/yelb
+cp -r "${SCRIPT_DIR}/yelb-appserver" /home/yelb
 chown -R yelb:yelb /home/yelb
 
 cp "${SCRIPT_DIR}/yelb-appserver.service" /lib/systemd/system/yelb-appserver.service
