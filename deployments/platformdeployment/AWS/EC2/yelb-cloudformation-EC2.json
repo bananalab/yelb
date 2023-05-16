@@ -1,0 +1,15 @@
+{
+  "AWSTemplateFormatVersion" : "2010-09-09",
+  "Resources" : {
+    "YelbInstance": {
+      "Type": "AWS::EC2::Instance",
+      "Properties": {
+        "LaunchTemplate": 
+        {
+          "LaunchTemplateName" : "devops-bootcamp",
+          "Version": 4
+        }
+      }
+    }
+  }
+}
