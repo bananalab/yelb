@@ -1,6 +1,5 @@
 #!/bin/bash -uex
 
-# Massimo Re Ferre' massimo@it20.info
 export SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 yum -y install postgresql postgresql-server postgresql-devel postgresql-contrib postgresql-docs
 postgresql-setup initdb || true

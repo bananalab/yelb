@@ -10,6 +10,6 @@ hooks:
       timeout: 30
       runas: root
   AfterInstall:
-    - location: deployments/platformdeployment/Linux/single-instance-deployment.sh
+    - location: deployments/platformdeployment/Linux/deploy.sh
       timeout: 3600
       runas: root
