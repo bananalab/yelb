@@ -1,18 +1,7 @@
 #!/bin/bash -uex
 
-# Massimo Re Ferre' massimo@it20.info
 export SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-###########################################################
-###########              USER INPUTS            ###########
-###########################################################
-# Variables AppServer component 
-export RACK_ENV="${RACK_ENV:-custom}"
-export REDIS_SERVER_ENDPOINT="${REDIS_SERVER_ENDPOINT:-localhost}"
-export YELB_DB_SERVER_ENDPOINT="${YELB_DB_SERVER_ENDPOINT:-localhost}"
-# If you want to connect to DDB you need to:
-# set $YELB_DDB_RESTAURANTS / $YELB_DDB_CACHE / $AWS_REGION instead of $YELB_DB_SERVER_ENDPOINT / $REDIS_SERVER_ENDPOINT
 
-yum update -y
 amazon-linux-extras install epel -y
 amazon-linux-extras install ruby2.6 -y
 yum install -y postgresql
