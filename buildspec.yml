@@ -35,10 +35,10 @@ phases:
     #commands:
       # - command
       # - command
-  #build:
-    #commands:
-      # - cd yelb-ui
-      # - bash -uex build.sh
+  build:
+    commands:
+       - cd yelb-ui
+       - bash -uex build.sh
   #post_build:
     #commands:
        # - command
