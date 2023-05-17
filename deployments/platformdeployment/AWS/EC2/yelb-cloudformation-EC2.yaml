@@ -1,0 +1,17 @@
+AWSTemplateFormatVersion: 2010-09-09
+Resources:
+  YelbInstance:
+    Type: 'AWS::EC2::Instance'
+    Properties:
+      LaunchTemplate:
+        LaunchTemplateName: devops-bootcamp
+        Version: 4
+  YelbARecord:
+    Type: AWS::Route53::RecordSet
+    Properties:
+        HostedZoneName: bananalab.dev.
+        Name: yelb.bananalab.dev.
+        Type: A
+        TTL: '900'
+        ResourceRecords:
+        - !GetAtt YelbInstance.PublicIp

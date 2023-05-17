@@ -21,4 +21,4 @@ chown -R yelb:yelb /home/yelb
 
 cp "${SCRIPT_DIR}/yelb-appserver.service" /lib/systemd/system/yelb-appserver.service
 systemctl enable yelb-appserver
-systemctl start yelb-appserver
+systemctl restart yelb-appserver
